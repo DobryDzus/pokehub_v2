@@ -1,0 +1,37 @@
+@font-face{
+    font-family: "Bounded";
+    src: url(../ttf/Bounded-Variable.ttf)
+
+}
+body{
+    font-family: "Bounded", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff5ee;
+}
+
+*{
+    font-family: "Bounded", sans-serif;
+}
+
+@media (max-width: 768px){
+    .navbar{
+        position: fixed;
+        bottom: 0;
+        top: auto;
+        width: 100%;
+        margin: 0 !important;
+        border-radius: 0 !important;
+    }
+}
+
+.navbar{
+    background-color: #2C163E;
+    border-radius: 3.125em;
+    margin: 1em 4em;
+
+}
+
+.navbar-brand{
+    color: #fff5ee;
+}
