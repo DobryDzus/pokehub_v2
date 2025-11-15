@@ -27,19 +27,16 @@ body{
 
 .navbar{
     background-color: #2E0910;
-
-
-    
-
 }
 
 .navbar-brand{
     color: #fff5ee;
 }
-
+/*
 .banner{
 
 }
+*/
 
 .cta-banner{
     background: linear-gradient(135deg, #fff5ee 0%, #ffd9b3 100%);
