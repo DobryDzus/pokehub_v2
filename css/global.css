@@ -189,6 +189,9 @@ body{
     background-color: #fff;
     transition: all 0.3s ease;
     box-shadow: 0 4px 15px rgba(46, 9, 16, 0.1);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 .product-card:hover {
@@ -200,12 +203,15 @@ body{
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
     padding: 1em;
+    object-fit: contain;
+    height: 250px;
 }
 
 .card-body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    flex-grow: 1;
 }
 
 .product-name {
@@ -238,3 +244,227 @@ body{
     box-shadow: 0 8px 25px rgba(46, 9, 16, 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.6);
     color: #fff5ee;
 }
+
+.price-container {
+    display: flex;
+    align-items: center;
+    gap: 0.75em;
+    justify-content: flex-start;
+    margin-bottom: 1em;
+}
+
+.sleva {
+    color: #ff6b6b;
+    font-weight: bold;
+    font-size: 1.2em;
+    margin: 0;
+    order: -1;
+}
+
+.sedasleva {
+    color: #2E0910;
+    text-decoration: line-through;
+    opacity: 0.6;
+    margin: 0;
+    font-size: 0.95em;
+}
+
+/* Badge pro předprodej */
+.product-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: linear-gradient(135deg, #ff6b6b, #ff8787);
+    color: white;
+    padding: 0.5em 1em;
+    border-radius: 2.5em;
+    font-weight: bold;
+    font-size: 0.85em;
+    z-index: 10;
+    box-shadow: 0 4px 12px rgba(255, 107, 107, 0.3);
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+}
+
+/* footer */
+.map{
+    width: 100%;
+    height: 30vh;
+}
+
+.wcm_foto{
+    width: 20%;
+}
+
+/* Info Window Styling */
+.info-window {
+    width: 280px;
+    padding: 1.2em;
+    border-radius: 8px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8em;
+    align-items: center;
+}
+
+.info-window img {
+    width: 70%;
+    border-radius: 6px;
+}
+
+.info-window h5 {
+    color: #2E0910;
+    font-weight: 700;
+    margin: 0;
+    font-size: 1em;
+}
+
+.info-window p {
+    color: #2E0910;
+    margin: 0;
+    font-size: 0.9em;
+    line-height: 1.4;
+}
+
+.info-window a {
+    display: inline-block;
+    background: linear-gradient(135deg, #2E0910 0%, #4a151e 100%);
+    color: #fff5ee;
+    padding: 0.6em 1.2em;
+    border-radius: 2em;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    font-size: 0.9em;
+}
+
+.info-window a:hover {
+    background: linear-gradient(135deg, #4a151e 0%, #2E0910 100%);
+    transform: scale(1.05);
+}
+
+footer{
+    background-color: #2E0910;
+    color: #fff5ee;
+    margin-top: 3em;
+}
+
+.footer-cont {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2em;
+    padding: 2em;
+}
+
+.footer-lane {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2em;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-info h3,
+.footer-contact h3,
+.footer-newsletter h3 {
+    color: #ffd9b3;
+    font-weight: 700;
+    margin-bottom: 1em;
+    font-size: 1.1em;
+}
+
+.footer-info ul,
+.footer-contact ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-info li,
+.footer-contact li {
+    margin-bottom: 0.5em;
+}
+
+.footer-info a,
+.footer-contact a,
+.footer-fyzcon a {
+    color: #fff5ee;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.footer-info a:hover,
+.footer-contact a:hover,
+.footer-fyzcon a:hover {
+    color: #ffd9b3;
+}
+
+.footer-icon {
+    width: 38px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff5ee;
+    border: 2px solid #ffd9b3;
+    border-radius: 50%;
+    font-size: 1.1em;
+    color: #2E0910;
+    transition: all 0.3s ease;
+}
+
+.footer-icon:hover {
+    background: #ffd9b3;
+    transform: scale(1.08);
+    box-shadow: 0 3px 10px rgba(255, 217, 179, 0.4);
+}
+
+.footer-fyzcon p {
+    margin: 0.5em 0;
+    font-size: 0.95em;
+}
+
+.footer-newsletter form {
+    display: flex;
+    gap: 0.5em;
+    margin-top: 1em;
+}
+
+.footer-newsletter input {
+    flex: 1;
+    padding: 0.7em 1em;
+    border: 2px solid #ffd9b3;
+    border-radius: 2em;
+    background-color: #fff5ee;
+    color: #2E0910;
+    font-weight: bold;
+}
+
+.footer-newsletter input::placeholder {
+    color: #999;
+}
+
+.footer-newsletter button {
+    padding: 0.7em 1.5em;
+    background: linear-gradient(135deg, #ffd9b3, #ffb380);
+    color: #2E0910;
+    border: none;
+    border-radius: 2em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.footer-newsletter button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(255, 217, 179, 0.4);
+}   
