@@ -181,3 +181,60 @@ body{
     background-color: rgba(255, 245, 238, 0.05);
     border-radius: 50%;
 }
+
+/* Styly pro produktové karty */
+.product-card {
+    border: 2px solid #2E0910;
+    border-radius: 15px;
+    background-color: #fff;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(46, 9, 16, 0.1);
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(46, 9, 16, 0.2);
+}
+
+.product-image {
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    padding: 1em;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.product-name {
+    font-weight: 700;
+    color: #2E0910;
+}
+
+.product-price {
+    font-weight: bold;
+    color: #2E0910;
+    font-size: 1.25em;
+    margin-bottom: 1em;
+}
+
+.add-to-cart-btn {
+    background: linear-gradient(135deg, #2E0910 0%, #4a151e 100%);
+    color: #fff5ee;
+    border: 2px solid #2E0910;
+    padding: 0.75em 1.5em;
+    font-weight: bold;
+    border-radius: 2.5em;
+    cursor: pointer;
+    transition: all 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
+    box-shadow: 0 4px 15px rgba(46, 9, 16, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.5);
+}
+
+.add-to-cart-btn:hover {
+    background: linear-gradient(135deg, #4a151e 0%, #2E0910 100%);
+    transform: scale(1.05);
+    box-shadow: 0 8px 25px rgba(46, 9, 16, 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.6);
+    color: #fff5ee;
+}
