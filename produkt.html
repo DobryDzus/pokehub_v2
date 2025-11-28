@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail produktu | PokéHub</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/global.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar sticky-bottom navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <a href="#" class="navbar-brand">
+                <img src="img/brand/logo/logo_bila.svg" alt="" height="60">
+                <strong>Pokéhub</strong>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">Produkty</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#novinky" class="dropdown-item">Novinky</a></li>
+                            <li><a href="" class="dropdown-item">Single Boostery</a></li>
+                            <li><a href="" class="dropdown-item">Elite Trainer Boxy</a></li>
+                            <li><a href="" class="dropdown-item">Jiné sady</a></li>
+                            <li><a href="" class="dropdown-item">Speciální produkty</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Asistovaný grading</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Výkup</a>
+                    </li>
+                    <li class="nav-item cart-item">
+                        <a class="nav-link cart-link" href="#">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class="cart-badge">0</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="container my-5 pt-5">
+        <a href="index.html" class="btn btn-outline-dark mb-4">← Zpět na přehled</a>
+        
+        <div class="row" id="product-container">
+            <div class="col-md-6 mb-4">
+                <img id="detail-img" src="" class="img-fluid rounded shadow w-100" alt="">
+            </div>
+
+            <div class="col-md-6">
+                <h1 id="detail-title" class="display-5 fw-bold" style="color: #2E0910;">Načítám...</h1>
+                <div class="d-flex align-items-center gap-3 my-3">
+                    <h3 id="detail-price" class="text-danger fw-bold mb-0"></h3>
+                    <span id="detail-old-price" class="text-muted text-decoration-line-through"></span>
+                </div>
+                <p id="detail-desc" class="lead">Popis produktu se načítá...</p>
+                
+                <button class="btn add-to-cart-btn btn-lg mt-3 px-5">Přidat do košíku</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div id="map" class="map"></div>
+        <script
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAXKrUcltEvGJxWl1pGEaM98nAYVFmoRwk&callback=initMap&libraries=marker"
+            defer
+        ></script> 
+        <div class="footer-cont">
+            <div class="footer-lane">
+                <div class="footer-info">
+                    <h3>O nás</h3>
+                    <ul>
+                        <li><a href="o-nas.html">O nás</a></li>
+                        <li><a href="kontakt.html">Kontakt</a></li>
+                        <li><a href="obchodni-podminky.html">Obchodní podmínky</a></li>
+                        <li><a href="ochrana-osobnich-udaju.html">Ochrana osobních údajů</a></li>
+                    </ul>
+                </div>  
+                <div class="footer-contact">
+                    <h3>Kontakt</h3>
+                    <div class="footer-fyzcon">
+                        <p>Chlumecká 765/6, 198 19 Praha 9</p>
+                        <p><a href="tel:281918100">+420 281 918 100</a></p>
+                        <p><a href="mailto:info@pokehub.cz">info@pokehub.cz</a></p>
+                    </div>
+                </div>
+                <div class="footer-newsletter">
+                    <h3>Newsletter</h3>
+                    <p>Přihlaste se k odběru novinek a získejte slevu 10% na první nákup!</p>
+                    <form action="">
+                        <input type="email" placeholder="Váš email">
+                        <button type="submit">Odeslat</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const productsDb = {
+            "mega-booster": {
+                name: "Mega Evolution Single Booster",
+                price: "109 Kč",
+                oldPrice: "129 Kč",
+                img: "img/produkty/Mega_Evolution/Pokemon_TCG_Mega_Evolution_Booster_Wrap_Mega_Gardevoir.webp",
+                desc: "Obsahuje 10 náhodných karet z edice Mega Evolution. Hledejte vzácné Mega pokémony jako Mega Lucario nebo Mega Gardevoir!"
+            },
+            "mega-etb": {
+                name: "Mega Evolution ETB náhodné",
+                price: "1349 Kč",
+                oldPrice: "1599 Kč",
+                img: "img/produkty/Mega_Evolution/Pokemon_TCG_Mega_Evolution_Elite_Trainer_Box_Mega_Gardevoir.webp",
+                desc: "Elite Trainer Box je ultimátní balení pro každého trenéra. Obsahuje 9 boosterů, obaly, kostky a mnoho dalšího."
+            },
+            "phantasmal-booster": {
+                name: "Phantasmal Flames Single Booster",
+                price: "139 Kč",
+                oldPrice: "",
+                img: "img/produkty/Phantasmal_Flames/Pokemon_TCG_Mega_Evolution—Phantasmal_Flames_Booster_Wrap_Mega_Charizard.webp",
+                desc: "Předobjednávka! Nová série plná ohnivých a duchovních pokémonů."
+            },
+            "phantasmal-etb": {
+                name: "Phantasmal Flames ETB",
+                price: "139 Kč",
+                oldPrice: "",
+                img: "img/produkty/Phantasmal_Flames/Pokemon_TCG_Mega_Evolution—Phantasmal_Flames_Elite_Trainer_Box.webp",
+                desc: "Předobjednávka! Nová série plná ohnivých a duchovních pokémonů."
+            }
+        };
+
+        const params = new URLSearchParams(window.location.search);
+        const productId = params.get('id');
+
+        const product = productsDb[productId];
+
+        if (product) {
+            document.getElementById('detail-title').innerText = product.name;
+            document.getElementById('detail-price').innerText = product.price;
+            document.getElementById('detail-img').src = product.img;
+            document.getElementById('detail-desc').innerText = product.desc;
+            document.title = product.name + " | Pokéhub"
+            
+            if(product.oldPrice) {
+                document.getElementById('detail-old-price').innerText = product.oldPrice;
+            } else {
+                document.getElementById('detail-old-price').style.display = 'none';
+            }
+        } else {
+            document.getElementById('product-container').innerHTML = "<h2>Produkt nenalezen.</h2>";
+        }
+    </script>
+</body>
+</html>
