@@ -69,11 +69,96 @@ body{
         transform: scale(1);
     }
 }
-/*
-.banner{
 
+/* dropdown */
+.dropdown-menu {
+    background-color: #2E0910;
+    border: 1px solid #ffd9b3;
+    border-radius: 15px;
+    padding: 0.5rem 0;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    animation: slideInDropdown 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    margin-top: 10px !important;
 }
-*/
+
+@keyframes slideInDropdown {
+    0% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.dropdown-item {
+    color: #fff5ee;
+    padding: 0.75rem 1.5rem;
+    transition: all 0.3s ease;
+    border-left: 3px solid transparent;
+    font-weight: 500;
+}
+
+.dropdown-item:hover, .dropdown-item:focus {
+    background-color: rgba(255, 217, 179, 0.1);
+    color: #ffd9b3;
+    border-left-color: #ffd9b3;
+    padding-left: 2rem;
+    background-image: linear-gradient(90deg, rgba(255, 217, 179, 0.1) 0%, transparent 100%);
+}
+/* Banner styling */
+.banner {
+    height: 600px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.carousel-caption {
+    background: rgba(46, 9, 16, 0.75);
+    border-radius: 20px;
+    padding: 2em;
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 217, 179, 0.3);
+    bottom: 5%;
+    max-width: 600px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.carousel-caption h5 {
+    color: #fff5ee;
+    font-weight: 700;
+    font-size: 2em;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+    margin-bottom: 1em;
+}
+
+@media (max-width: 768px) {
+    .banner {
+        height: 500px;
+    }
+    
+    .carousel-caption {
+        bottom: 5%;
+        padding: 1.5em;
+        width: 85%;
+        margin: 0 auto;
+    }
+    
+    .carousel-caption h5 {
+        font-size: 1.4em;
+        margin-bottom: 0.8em;
+    }
+    
+    .cta-banner {
+        padding: 0.6em 1.5em;
+        font-size: 1em;
+        width: 100%;
+    }
+}
 
 .cta-banner{
     background: linear-gradient(135deg, #fff5ee 0%, #ffd9b3 100%);
@@ -192,6 +277,7 @@ body{
     display: flex;
     flex-direction: column;
     height: 100%;
+    cursor: pointer;
 }
 
 .product-card:hover {
