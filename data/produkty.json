@@ -1,0 +1,31 @@
+{
+    "mega-booster": {
+        "name": "Mega Evolution Single Booster",
+        "price": "109",
+        "oldPrice": "129",
+        "img": "img/produkty/Mega_Evolution/Pokemon_TCG_Mega_Evolution_Booster_Wrap_Mega_Gardevoir.webp",
+        "desc": "Obsahuje 10 náhodných karet z edice Mega Evolution. Hledejte vzácné Mega pokémony jako Mega Lucario nebo Mega Gardevoir!",
+        "sklad": true
+    },
+    "mega-etb": {
+        "name": "Mega Evolution ETB náhodné",
+        "price": "1349",
+        "oldPrice": "1599",
+        "img": "img/produkty/Mega_Evolution/Pokemon_TCG_Mega_Evolution_Elite_Trainer_Box_Mega_Gardevoir.webp",
+        "desc": "Elite Trainer Box je ultimátní balení pro každého trenéra. Obsahuje 9 boosterů, obaly, kostky a mnoho dalšího."
+    },
+    "phantasmal-booster": {
+        "name": "Phantasmal Flames Single Booster",
+        "price": "139",
+        "oldPrice": "",
+        "img": "img/produkty/Phantasmal_Flames/Pokemon_TCG_Mega_Evolution—Phantasmal_Flames_Booster_Wrap_Mega_Charizard.webp",
+        "desc": "Předobjednávka! Nová série plná ohnivých a duchovních pokémonů."
+    },
+    "phantasmal-etb": {
+        "name": "Phantasmal Flames ETB",
+        "price": "139",
+        "oldPrice": "",
+        "img": "img/produkty/Phantasmal_Flames/Pokemon_TCG_Mega_Evolution—Phantasmal_Flames_Elite_Trainer_Box.webp",
+        "desc": "Předobjednávka! Nová série plná ohnivých a duchovních pokémonů."
+    }
+}
