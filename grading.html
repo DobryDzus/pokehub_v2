@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asistovaný grading | PokéHub</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/grading.css">
+</head>
+<body>
+
+    <nav class="navbar sticky-bottom navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <a href="index.html" class="navbar-brand">
+                <img src="img/brand/logo/logo_bila.svg" alt="" height="60">
+                <strong>Pokéhub</strong>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="">Produkty</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="index.html#novinky" class="dropdown-item">Novinky</a></li>
+                            <li><a href="/" class="dropdown-item">Single Boostery</a></li>
+                            <li><a href="/" class="dropdown-item">Elite Trainer Boxy</a></li>
+                            <li><a href="/" class="dropdown-item">Jiné sady</a></li>
+                            <li><a href="/" class="dropdown-item">Speciální produkty</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="grading.html">Asistovaný grading</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Výkup</a>
+                    </li>
+                    <li class="nav-item cart-item">
+                        <a class="nav-link cart-link" href="#">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class="cart-badge">0</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="grading-hero text-center">
+        <div class="container">
+            <h1 class="display-4 fw-bold mb-3">Asistovaný Grading Karet</h1>
+            <p class="lead mb-0">Zvyšte hodnotu svých Pokémon karet s profesionálním gradingem PSA, BGS a CGC.<br>My se postaráme o administrativu, vy jen čekáte na výsledek.</p>
+        </div>
+    </div>
+
+    <section class="container my-5">
+        
+        <div class="row mb-5 justify-content-center">
+            <div class="col-lg-8 text-center">
+                <h3 class="grading-subtitle">Proč gradovat karty přes nás?</h3>
+                <p class="fs-5">Grading nejen ověří pravost vaší karty, ale také určí její kondici na stupnici od 1 do 10. Gradovaná karta je chráněna před poškozením a její hodnota na trhu výrazně stoupá. Nabízíme kompletní servis – od přípravy, přes pojištěnou dopravu do USA, až po celní řízení při návratu.</p>
+            </div>
+        </div>
+
+        <h2 class="text-center mb-5 grading-section-title">Ceník Služeb</h2>
+        <div class="row row-cols-1 row-cols-md-3 g-4 mb-5">
+            <div class="col">
+                <div class="price-card">
+                    <div class="price-header">
+                        <h4>PSA Grading</h4>
+                    </div>
+                    <div class="card-body-price">
+                        <div class="price-amount">od 599 Kč<br><small class="text-muted fs-6 fw-normal">/ karta</small></div>
+                        <ul class="list-unstyled price-features flex-grow-1">
+                            <li><i class="fas fa-check-circle text-success me-2"></i>Nejpopulárnější volba</li>
+                            <li><i class="fas fa-clock text-muted me-2"></i>Dodání 45-60 dní</li>
+                            <li><i class="fas fa-shield-alt text-muted me-2"></i>Pojištění v ceně</li>
+                        </ul>
+                        <button class="cta-banner w-100 mt-3 cta-grading">Objednat PSA</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="price-card">
+                    <div class="price-header">
+                        <h4>CGC Grading</h4>
+                    </div>
+                    <div class="card-body-price">
+                        <div class="price-amount">od 499 Kč<br><small class="text-muted fs-6 fw-normal">/ karta</small></div>
+                        <ul class="list-unstyled price-features flex-grow-1">
+                            <li><i class="fas fa-check-circle text-success me-2"></i>Skvělé pro herní karty</li>
+                            <li><i class="fas fa-clock text-muted me-2"></i>Dodání 30-45 dní</li>
+                            <li><i class="fas fa-shield-alt text-muted me-2"></i>Krystalicky čistý obal</li>
+                        </ul>
+                        <button class="cta-banner w-100 mt-3 cta-grading">Objednat CGC</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="price-card">
+                    <div class="price-header">
+                        <h4>Beckett (BGS)</h4>
+                    </div>
+                    <div class="card-body-price">
+                        <div class="price-amount">od 899 Kč<br><small class="text-muted fs-6 fw-normal">/ karta</small></div>
+                        <ul class="list-unstyled price-features flex-grow-1">
+                            <li><i class="fas fa-check-circle text-success me-2"></i>Pro nejvzácnější karty</li>
+                            <li><i class="fas fa-star text-warning me-2"></i>Sub-grades v ceně</li>
+                            <li><i class="fas fa-clock text-muted me-2"></i>Dodání 60+ dní</li>
+                        </ul>
+                        <button class="cta-banner w-100 mt-3 cta-grading">Objednat BGS</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="text-center mb-5 grading-section-title">Jak to funguje?</h2>
+        <div class="row text-center g-4">
+            <div class="col-md-3 step-col">
+                <i class="fas fa-search step-icon"></i>
+                <h5 class="fw-bold step-title">1. Výběr karet</h5>
+                <p>Vyberte karty, které chcete nechat ohodnotit. Doporučujeme je vložit do sleevu a toploaderu.</p>
+            </div>
+            <div class="col-md-3 step-col">
+                <i class="fas fa-file-signature step-icon"></i>
+                <h5 class="fw-bold step-title">2. Objednávka</h5>
+                <p>Vyplňte formulář nebo nás kontaktujte. Domluvíme detaily a předběžnou cenu.</p>
+            </div>
+            <div class="col-md-3 step-col">
+                <i class="fas fa-box-open step-icon"></i>
+                <h5 class="fw-bold step-title">3. Předání</h5>
+                <p>Karty nám zašlete poštou nebo je doneste osobně na naši pobočku v Praze na Černém Mostě.</p>
+            </div>
+            <div class="col-md-3 step-col">
+                <i class="fas fa-gem step-icon"></i>
+                <h5 class="fw-bold step-title">4. Hotovo</h5>
+                <p>O zbytek se postaráme my. Jakmile karty dorazí zpět z USA, dáme vám vědět.</p>
+            </div>
+        </div>
+
+    </section>
+
+    <footer>
+        <div id="map" class="map"></div>
+        <script
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAXKrUcltEvGJxWl1pGEaM98nAYVFmoRwk&callback=initMap&libraries=marker"
+            defer
+        ></script> 
+        <div class="footer-cont">
+            <div class="footer-lane">
+                <div class="footer-info">
+                    <h3>O nás</h3>
+                    <ul>
+                        <li><a href="o-nas.html">O nás</a></li>
+                        <li><a href="kontakt.html">Kontakt</a></li>
+                        <li><a href="obchodni-podminky.html">Obchodní podmínky</a></li>
+                        <li><a href="ochrana-osobnich-udaju.html">Ochrana osobních údajů</a></li>
+                    </ul>
+                </div>  
+                <div class="footer-contact">
+                    <h3>Kontakt</h3>
+                    <div class="footer-fyzcon">
+                        <p>Chlumecká 765/6, 198 19 Praha 9</p>
+                        <p><a href="tel:281918100">+420 281 918 100</a></p>
+                        <p><a href="mailto:info@pokehub.cz">info@pokehub.cz</a></p>
+                    </div>
+                </div>
+                <div class="footer-newsletter">
+                    <h3>Newsletter</h3>
+                    <p>Přihlaste se k odběru novinek a získejte slevu 10% na první nákup!</p>
+                    <form action="">
+                        <input type="email" placeholder="Váš email">
+                        <button type="submit">Odeslat</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
