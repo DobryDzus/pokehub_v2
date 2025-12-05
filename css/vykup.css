@@ -1,0 +1,122 @@
+.vykup-hero {
+    background: linear-gradient(135deg, #1a2e09 0%, #2E0910 100%); /* Jemný přechod do zelena pro "peníze/obchod", ale stále v brandu */
+    color: #fff5ee;
+    padding: 4rem 0;
+    margin-bottom: 2rem;
+    border-bottom: 4px solid #ffd9b3;
+}
+
+.comparison-section {
+    padding: 3rem 0;
+}
+
+.comparison-card {
+    border-radius: 15px;
+    overflow: hidden;
+    height: 100%;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    background: #fff;
+    border: 2px solid transparent;
+}
+
+.comparison-card:hover {
+    transform: translateY(-5px);
+}
+
+.comp-yes {
+    border-color: #28a745;
+}
+
+.comp-no {
+    border-color: #dc3545;
+}
+
+.comp-header {
+    padding: 1rem;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.bg-yes { background-color: #28a745; }
+.bg-no { background-color: #dc3545; }
+
+.comp-body {
+    padding: 2rem;
+}
+
+.comp-img-container {
+    height: 250px;
+    width: 100%;
+    background-color: #f8f9fa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.comp-img-container img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.criteria-list li {
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.process-number {
+    width: 50px;
+    height: 50px;
+    background-color: #2E0910;
+    color: #fff5ee;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0 auto 1rem auto;
+}
+
+/* Extracted Inline Styles */
+.vykup-subtitle {
+    color: #2E0910;
+    font-weight: 700;
+}
+
+.vykup-divider {
+    border-color: #2E0910;
+}
+
+.vykup-section-title {
+    color: #2E0910;
+    font-weight: 700;
+}
+
+.vykup-form-card {
+    background-color: #fff5ee;
+}
+
+.vykup-form-title {
+    color: #2E0910;
+}
+
+.vykup-link {
+    color: #2E0910;
+}
+
+.btn-vykup {
+    background-color: #2E0910;
+    color: white;
+}
+
+.btn-vykup:hover {
+    background-color: #4a151e;
+    color: #fff5ee;
+}
