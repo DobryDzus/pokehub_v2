@@ -1,3 +1,44 @@
 .productImg{
     width: 20vw;
 }
+
+/* hero sekce pod produktem */
+.benefits-hero {
+    margin: 3rem 0;
+}
+
+.benefit-item {
+    padding: 1.5rem;
+    transition: transform 0.3s ease;
+}
+
+.benefit-item:hover {
+    transform: translateY(-3px);
+}
+
+.benefit-icon {
+    font-size: 2rem;
+    color: #2E0910;
+    transition: all 0.3s ease;
+}
+
+.benefit-item:hover .benefit-icon {
+    transform: scale(1.1);
+}
+
+.benefit-item h5 {
+    color: #2E0910;
+    margin-top: 1rem;
+    font-size: 1rem;
+}
+
+.benefit-item p {
+    color: #6c757d;
+    font-size: 0.9rem;
+}
+
+/* dalsi produkty */
+#related-products h2 {
+    color: #2E0910;
+    font-weight: 700;
+}
