@@ -130,7 +130,7 @@
         "desc": "Souboj legendárních rivalů začíná! Team Rocket je zpět.",
         "stock": false,
         "instock": 0,
-        "presell": true,
+        "presell": false,
         "soon": false
     },
     "destined-etb": {
@@ -339,7 +339,7 @@
         "desc": "3 boostery, promo karta Glaceon a arch samolepek.",
         "stock": false,
         "instock": 0,
-        "presell": true,
+        "presell": false,
         "soon": false
     },
     "prismatic-stickerLeafeon": {
@@ -352,7 +352,7 @@
         "desc": "3 boostery, promo karta Leafeon a arch samolepek.",
         "stock": false,
         "instock": 0,
-        "presell": true,
+        "presell": false,
         "soon": false
     },
     "prismatic-stickerSylveon": {
@@ -365,7 +365,7 @@
         "desc": "3 boostery, promo karta Sylveon a arch samolepek.",
         "stock": false,
         "instock": 0,
-        "presell": true,
+        "presell": false,
         "soon": false
     },
     "shrouded-bundle": {

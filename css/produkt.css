@@ -42,3 +42,19 @@
     color: #2E0910;
     font-weight: 700;
 }
+
+/* styly badgu */
+.sklad-details {
+    background-color: #f8f9fa;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.sklad-details p {
+    font-size: 0.95rem;
+    color: #2E0910;
+}
+
+.sklad-details i {
+    font-size: 1.1rem;
+}

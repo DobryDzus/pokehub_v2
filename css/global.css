@@ -368,7 +368,6 @@ body{
     font-size: 0.85em;
     z-index: 10;
     box-shadow: 0 4px 12px rgba(255, 107, 107, 0.3);
-    animation: float 3s ease-in-out infinite;
 }
 
 @keyframes float {

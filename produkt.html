@@ -63,12 +63,19 @@
             </div>
 
             <div class="col-md-6">
-                <h1 id="detail-title" class="display-5 fw-bold" style="color: #2E0910;">Načítám...</h1>
+                <h1 id="detail-title" class="display-5 fw-bold">Načítám...</h1>
+                
+                <!-- sklad badge -->
+                <div id="stock-badge" class="mb-3"></div>
+                
                 <div class="d-flex align-items-center gap-3 my-3">
                     <h3 id="detail-price" class="text-danger fw-bold mb-0"></h3>
                     <span id="detail-old-price" class="text-muted text-decoration-line-through"></span>
                 </div>
                 <p id="detail-desc" class="lead">Popis produktu se načítá...</p>
+                
+                <!-- sklad info -->
+                <div id="stock-info" class="mb-3"></div>
                 
                 <button class="btn add-to-cart-btn btn-lg mt-3 px-5">Přidat do košíku</button>
             </div>
@@ -109,7 +116,7 @@
     <section class="container my-5">
         <h2 class="text-center mb-5" style="color: #2E0910; font-weight: 700;">Další produkty</h2>
         <div class="row row-cols-1 row-cols-md-4 g-4" id="related-products">
-            <!-- Produkty se načítají dynamicky -->
+            <!-- produkty se nacitaji dynamicky -->
         </div>
 
     </section>

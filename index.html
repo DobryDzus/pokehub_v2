@@ -89,7 +89,7 @@
         <h2 class="text-center mb-4">Nejnovější produkty</h2>
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4" id="product-list">
             <div class="col">
-                <div class="card h-100 product-card" onclick="location.href = 'produkt?id=mega-booster'">
+                <div class="card h-100 product-card" data-product-id="mega-booster" onclick="location.href = 'produkt?id=mega-booster'">
                     <img id="cardphoto" src="img/produkty/Mega_Evolution/Pokemon_TCG_Mega_Evolution_Booster_Wrap_Mega_Gardevoir.webp" class="card-img-top product-image cardphoto" alt="Mega Evolution Single Booster" onmouseover="secondimg(`img/produkty/Mega_Evolution/Pokemon_TCG_Mega_Evolution_Booster_Wrap_Mega_Lucario.webp`, this)" onmouseout="resetimg(`img/produkty/Mega_Evolution/Pokemon_TCG_Mega_Evolution_Booster_Wrap_Mega_Gardevoir.webp`, this)">
                     <div class="card-body">
                         <h5 class="card-title product-name">Mega Evolution Single Booster</h5>
@@ -102,7 +102,7 @@
                 </div>
             </div>
             <div class="col">
-                <div class="card h-100 product-card" onclick="location.href = 'produkt?id=mega-etb'">
+                <div class="card h-100 product-card" data-product-id="mega-etb" onclick="location.href = 'produkt?id=mega-etb'">
                     <img id="cardphoto" src="img/produkty/Mega_Evolution/Pokemon_TCG_Mega_Evolution_Elite_Trainer_Box_Mega_Gardevoir.webp" class="card-img-top product-image cardphoto" alt="Mega Evolution ETB náhodné" onmouseover="secondimg(`img/produkty/Mega_Evolution/Pokemon_TCG_Mega_Evolution_Elite_Trainer_Box_Mega_Lucario.webp`, this)" onmouseout="resetimg(`img/produkty/Mega_Evolution/Pokemon_TCG_Mega_Evolution_Elite_Trainer_Box_Mega_Gardevoir.webp`, this)">
                     <div class="card-body">
                         <h5 class="card-title product-name">Mega Evolution ETB náhodné</h5>
@@ -115,8 +115,7 @@
                 </div>
             </div>
             <div class="col">
-                <div class="card h-100 product-card" onclick="location.href = 'produkt?id=phantasmal-booster'">
-                    <div class="product-badge">Předprodej</div>
+                <div class="card h-100 product-card" data-product-id="phantasmal-booster" onclick="location.href = 'produkt?id=phantasmal-booster'">
                     <img src="img/produkty/Phantasmal_Flames/Pokemon_TCG_Mega_Evolution—Phantasmal_Flames_Booster_Wrap_Mega_Charizard.webp" class="card-img-top product-image" alt="Phantasmal Flames Single Booster" onmouseover="secondimg(`img/produkty/Phantasmal_Flames/Pokemon_TCG_Mega_Evolution—Phantasmal_Flames_Booster_Wrap_Mega_Gengar.webp`, this)" onmouseout="resetimg(`img/produkty/Phantasmal_Flames/Pokemon_TCG_Mega_Evolution—Phantasmal_Flames_Booster_Wrap_Mega_Charizard.webp`, this)">
                     <div class="card-body">
                         <h5 class="card-title product-name">Phantasmal Flames Single Booster</h5>
@@ -126,8 +125,7 @@
                 </div>
             </div>
             <div class="col">
-                <div class="card h-100 product-card" onclick="location.href = 'produkt?id=phantasmal-etb'">
-                    <div class="product-badge">Předprodej</div>
+                <div class="card h-100 product-card" data-product-id="phantasmal-etb" onclick="location.href = 'produkt?id=phantasmal-etb'">
                     <img src="img/produkty/Phantasmal_Flames/Pokemon_TCG_Mega_Evolution—Phantasmal_Flames_Elite_Trainer_Box.webp" class="card-img-top product-image" alt="Phantasmal Flames ETB">
                     <div class="card-body">
                         <h5 class="card-title product-name">Phantasmal Flames ETB</h5>

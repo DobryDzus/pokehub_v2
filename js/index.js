@@ -122,3 +122,44 @@ async function initMap() {
   
   
   window.initMap = initMap;
+
+// prida badge k produktu na zaklade stavu skladu
+async function addProductBadges() {
+    try {
+        const response = await fetch('data/produkty.json');
+        const data = await response.json();
+        
+        const productCards = document.querySelectorAll('[data-product-id]');
+        
+        productCards.forEach(card => {
+            const productId = card.getAttribute('data-product-id');
+            const product = data[productId];
+            
+            if (!product) return;
+            
+            // Určí badge podle stavu produktu
+            let badgeHtml = '';
+            if (product.presell) {
+                badgeHtml = `<div class="product-badge" style="background: linear-gradient(135deg, #ff6b6b, #ff8787);">Předprodej</div>`;
+            } else if (product.soon) {
+                badgeHtml = `<div class="product-badge" style="background: linear-gradient(135deg, #4a9eff, #6ab0ff);">Brzy skladem</div>`;
+            } else if (product.stock && product.instock > 0) {
+                badgeHtml = `<div class="product-badge" style="background: linear-gradient(135deg, #28a745, #34ce57);">Skladem</div>`;
+            } else if (!product.stock || product.instock === 0) {
+                badgeHtml = `<div class="product-badge" style="background: linear-gradient(135deg, #6c757d, #868e96);">Není skladem</div>`;
+            }
+            
+            // Přidá badge jako první element karty (pokud existuje)
+            if (badgeHtml) {
+                const firstImg = card.querySelector('img');
+                if (firstImg) {
+                    firstImg.insertAdjacentHTML('beforebegin', badgeHtml);
+                }
+            }
+        });
+    } catch (error) {
+        console.error('Chyba při načítání produktů:', error);
+    }
+}
+
+document.addEventListener('DOMContentLoaded', addProductBadges);
