@@ -56,6 +56,12 @@ fetch('data/produkty.json')
                 })
             }
             
+            // nastav onclick pro hlavni tlacitko Do kosiku
+            const addToCartBtn = document.getElementById('add-to-cart-main');
+            addToCartBtn.onclick = function() {
+                addToCart(productId, product.name, parseInt(product.price));
+            };
+            
             // nacte produkty
             loadRelatedProducts(productsDb, productId);
         } else {
@@ -111,7 +117,7 @@ function loadRelatedProducts(productsDb, currentProductId) {
                 <div class="card-body">
                     <h5 class="card-title product-name">${product.name}</h5>
                     ${cenaHtml}
-                    <a href="#" class="btn add-to-cart-btn" onclick="event.stopPropagation();">Do košíku</a>
+                    <button class="btn add-to-cart-btn" onclick="event.stopPropagation(); addToCart('${id}', '${product.name}', ${product.price})">Do košíku</button>
                 </div>
             </div>
         `;

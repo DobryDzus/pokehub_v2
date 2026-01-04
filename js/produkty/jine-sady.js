@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                             <div class="price-container">
                                 ${priceHtml}
                             </div>
-                            <button class="btn add-to-cart-btn w-100">Do košíku</button>
+                            <button class="btn add-to-cart-btn w-100" onclick="event.stopPropagation(); addToCart('${id}', '${product.name}', ${product.price})">Do košíku</button>
                         </div>
                     </div>
                 </div>

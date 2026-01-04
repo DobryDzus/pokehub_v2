@@ -1,0 +1,155 @@
+.cart-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2em 1em;
+}
+
+.cart-card {
+  background: #fff;
+  border: 2px solid #2e0910;
+  border-radius: 15px;
+  padding: 1.5em;
+  box-shadow: 0 4px 15px rgba(46, 9, 16, 0.1);
+  margin-bottom: 1.5em;
+}
+
+.cart-item-row {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid rgba(46, 9, 16, 0.1);
+  padding: 1.5em 0;
+  gap: 1.5em;
+}
+
+.cart-item-row:last-child {
+  border-bottom: none;
+}
+
+.cart-img-container {
+  width: 100px;
+  height: 100px;
+  flex-shrink: 0;
+}
+
+.cart-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 10px;
+  border: 1px solid #ffd9b3;
+}
+
+.qty-btn {
+  background-color: #fff5ee;
+  border: 2px solid #2e0910;
+  color: #2e0910;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.qty-btn:hover {
+  background-color: #2e0910;
+  color: #fff5ee;
+}
+
+.qty-btn:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+.stock-info {
+  font-size: 0.85em;
+  margin-top: 5px;
+}
+
+.shipping-option {
+  border: 2px solid #ffd9b3;
+  border-radius: 10px;
+  padding: 1em;
+  margin-bottom: 0.5em;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.shipping-option:hover {
+  background-color: #fff5ee;
+  border-color: #2e0910;
+}
+
+.shipping-option input:checked + label {
+  font-weight: bold;
+}
+
+/* Skrytí defaultního radia a stylování rodiče, když je radio checked */
+.shipping-radio:checked + .shipping-content {
+  color: #2e0910;
+}
+
+.shipping-label {
+  width: 100%;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Stylování selected shipping boxu pomocí JS class */
+.shipping-selected {
+  background-color: #fff5ee;
+  border-color: #2e0910;
+  box-shadow: 0 0 0 1px #2e0910;
+}
+
+.summary-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.8em;
+  font-size: 1.1em;
+}
+
+.summary-total {
+  font-size: 1.5em;
+  font-weight: 700;
+  color: #2e0910;
+  border-top: 2px solid #2e0910;
+  padding-top: 0.5em;
+  margin-top: 0.5em;
+}
+
+.btn-checkout {
+  background: linear-gradient(135deg, #2e0910 0%, #4a151e 100%);
+  color: #fff5ee;
+  width: 100%;
+  padding: 1em;
+  font-size: 1.2em;
+  font-weight: bold;
+  border-radius: 2em;
+  border: none;
+  transition: transform 0.3s;
+}
+
+.btn-checkout:hover {
+  transform: scale(1.02);
+  box-shadow: 0 5px 15px rgba(46, 9, 16, 0.3);
+  color: #ffd9b3;
+}
+
+/* Responsivita pro mobily */
+@media (max-width: 768px) {
+  .cart-item-row {
+    flex-direction: column;
+    text-align: center;
+  }
+  .cart-actions {
+    justify-content: center;
+  }
+}
