@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elite Trainer Boxy | PokéHub</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="../css/global.css">
+</head>
+<style>
+    .page-header {
+    background: linear-gradient(rgba(255, 245, 238, 0.9), rgba(255, 245, 238, 0.9)), url('../img/produkty/Surging_Sparks/Pokemon_TCG_Scarlet_Violet—Surging_Sparks_Elite_Trainer_Box.webp'); /* Placeholder pozadí */
+    background-size: cover;
+    background-position: center;
+    border-bottom: 2px solid #2E0910;
+    margin-bottom: 2em;
+}
+
+</style>
+<body>
+
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <a href="/" class="navbar-brand">
+                <img src="../img/brand/logo/logo_bila.svg" alt="" height="60">
+                <strong>Pokéhub</strong>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">Produkty</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../index#novinky" class="dropdown-item">Novinky</a></li>
+                            <li><a href="/produkty/single-boostery" class="dropdown-item">Single Boostery</a></li>
+                            <li><a href="/produkty/etb" class="dropdown-item">Elite Trainer Boxy</a></li>
+                            <li><a href="/produkty/jine-sady" class="dropdown-item">Jiné sady</a></li>
+                            <li><a href="/produkty/specialni-produkty" class="dropdown-item">Speciální produkty</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../grading">Asistovaný grading</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../vykup">Výkup</a>
+                    </li>
+                    <li class="nav-item cart-item">
+                        <a class="nav-link cart-link" href="#">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class="cart-badge">0</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="page-header py-5 text-center">
+        <div class="container">
+            <h1 class="display-4 fw-bold" style="color: #2E0910;">Elite Trainer Boxy</h1>
+            <p class="lead" style="color: #2E0910;">Prémiová balení pro sběratele i hráče. Vše, co potřebujete pro začátek.</p>
+        </div>
+    </header>
+
+    <section class="container mb-5">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4" id="etb-list">
+            <div class="text-center w-100 py-5">
+                <div class="spinner-border text-danger" role="status">
+                    <span class="visually-hidden">Načítám...</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div id="map" class="map"></div>
+        <script
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAXKrUcltEvGJxWl1pGEaM98nAYVFmoRwk&callback=initMap&libraries=marker"
+            defer
+        ></script> 
+        <div class="footer-cont">
+            <div class="footer-lane">
+                <div class="footer-info">
+                    <h3>O nás</h3>
+                    <ul>
+                        <li><a href="../o-nas.html">O nás</a></li>
+                        <li><a href="../kontakt.html">Kontakt</a></li>
+                        <li><a href="../obchodni-podminky.html">Obchodní podmínky</a></li>
+                        <li><a href="../ochrana-osobnich-udaju.html">Ochrana osobních údajů</a></li>
+                    </ul>
+                </div>  
+                <div class="footer-contact">
+                    <h3>Kontakt</h3>
+                    <div class="footer-fyzcon">
+                        <p>Chlumecká 765/6, 198 19 Praha 9</p>
+                        <p><a href="tel:281918100">+420 281 918 100</a></p>
+                        <p><a href="mailto:info@pokehub.cz">info@pokehub.cz</a></p>
+                    </div>
+                </div>
+                <div class="footer-newsletter">
+                    <h3>Newsletter</h3>
+                    <p>Přihlaste se k odběru novinek a získejte slevu 10% na první nákup!</p>
+                    <form action="">
+                        <input type="email" placeholder="Váš email">
+                        <button type="submit">Odeslat</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+    <script src="../js/produkty/etb.js"></script>
+    <script src="../js/index.js"></script>
+</body>
+</html>
