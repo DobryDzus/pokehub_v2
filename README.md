@@ -2,6 +2,8 @@
 
 # PokéHub v2 - responzivní a lepčí verze
 Web je dostupný na https://pokehub.majuki.tech
+
+### ! Všechny odkazy jsou psány bez .html koncovky, aby to lépe vypadalo na webu uvedený výše. !
 ##  Použité technologie
 
 * **HTML & CSS**: Struktura a basic stylování
