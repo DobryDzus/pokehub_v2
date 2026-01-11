@@ -137,7 +137,6 @@ async function addProductBadges() {
             
             if (!product) return;
             
-            // Určí badge podle stavu produktu
             let badgeHtml = '';
             if (product.presell) {
                 badgeHtml = `<div class="product-badge" style="background: linear-gradient(135deg, #ff6b6b, #ff8787);">Předprodej</div>`;
@@ -149,7 +148,6 @@ async function addProductBadges() {
                 badgeHtml = `<div class="product-badge" style="background: linear-gradient(135deg, #6c757d, #868e96);">Není skladem</div>`;
             }
             
-            // Přidá badge jako první element karty (pokud existuje)
             if (badgeHtml) {
                 const firstImg = card.querySelector('img');
                 if (firstImg) {
